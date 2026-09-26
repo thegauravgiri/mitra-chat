@@ -1,0 +1,111 @@
+name: mitra
+description: "Mitra Chat — Cross-platform AI assistant turning handwritten notes into executed work."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Persistence
+  drift: ^2.23.1
+  drift_flutter: ^0.2.2
+  path_provider: ^2.1.6
+  path: ^1.9.0
+  flutter_secure_storage: ^9.2.4
+  shared_preferences: ^2.5.5
+
+  # Networking
+  dio: ^5.11.0
+
+  # MCP
+  dart_mcp: ^0.5.2
+
+  # Ingestion
+  receive_sharing_intent: ^1.9.0
+  super_drag_and_drop: ^0.9.1
+  super_clipboard: ^0.9.1
+  image_picker: ^1.2.3
+
+  # UI
+  go_router: ^18.0.0
+  gpt_markdown: ^1.2.1
+  url_launcher: ^6.3.2
+  cupertino_icons: ^1.0.8
+  dynamic_color: ^1.7.0
+  file_picker: ^8.1.7
+
+  # Utilities
+  meta: ^1.15.0
+  async: ^2.11.0
+  stream_channel: ^2.1.2
+  uuid: ^4.5.1
+  intl: ^0.20.2
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.15
+  riverpod_generator: ^2.6.4
+  riverpod_lint: ^2.6.4
+  custom_lint: ^0.7.1
+  drift_dev: ^2.24.2
+  freezed: ^2.5.8
+  json_serializable: ^6.9.4
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.3
+
+dependency_overrides:
+  analyzer_plugin: ^0.13.0
+
+flutter_launcher_icons:
+  image_path: "assets/icon/icon_full.png"
+  android: true
+  ios: true
+  macos:
+    generate: true
+    image_path: "assets/icon/icon_full.png"
+  windows:
+    generate: true
+    image_path: "assets/icon/icon_full.png"
+  web:
+    generate: true
+    image_path: "assets/icon/icon_full.png"
+    background_color: "#4361EE"
+    theme_color: "#4361EE"
+  adaptive_icon_background: "#4361EE"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Variable.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Variable.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Variable.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Variable.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Variable.ttf
+          weight: 400
+        - asset: assets/fonts/JetBrainsMono-Variable.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-Variable.ttf
+          weight: 700
+
